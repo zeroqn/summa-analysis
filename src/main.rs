@@ -5,7 +5,6 @@ use env_logger::Env;
 use korrekt::{
     circuit_analyzer::{self, analyzer::Analyzer, halo2_proofs_libs::*},
     io,
-    sample_circuits::summa as sample_circuits,
 };
 use log::{info, LevelFilter};
 use num::{BigInt, Num};
@@ -14,8 +13,8 @@ fn main() -> Result<(), anyhow::Error> {
     env_logger::Builder::from_env(Env::default().default_filter_or("info")).init();
 
     let circuit =
-        sample_circuits::lookup_circuits::multiple_lookups_summa::MyCircuit::<Fr>(PhantomData);
-    let k = 6;
+        summa_solvency::circuits::merkle_sum_tree::MstInclusionCircuit::<4, 2, 4>::init_empty();
+    let k = 20;
 
     let mut analyzer = Analyzer::new(&circuit, k).unwrap();
 
