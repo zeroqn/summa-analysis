@@ -32,5 +32,10 @@ fn main() -> Result<(), anyhow::Error> {
     let t = analyzer
         .dispatch_analysis(analyzer_type, &prime)
         .context("Failed to perform analysis!")?;
+
+    for log in analyzer.log {
+        println!("{}", log);
+    }
+
     Ok(())
 }
