@@ -4,7 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-halo2_proofs = {  git = "https://github.com/summa-dev/halo2"}
+# halo2_proofs = {  git = "https://github.com/summa-dev/halo2"}
+halo2_proofs = { git = "https://github.com/zeroqn/halo2", branch = "feat-adapt-to-analyzer" }
 askama = { version = "0.12.0", features = ["config"], default-features = false }
 hex = "0.4.3"
 ruint = "1"

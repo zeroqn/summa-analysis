@@ -11,4 +11,4 @@ env_logger = "0.11.2"
 korrekt = { path = "../halo2-analyzer/korrekt", default-features = false, features = ["use_summa_halo2_proofs"] }
 log = "0.4.20"
 num = "0.4.1"
-summa-solvency = { path = "./solvency/zk_prover" }
+summa-solvency = { path = "./circuit/solvency/zk_prover" }

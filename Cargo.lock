@@ -2079,29 +2079,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "halo2_proofs"
-version = "0.2.0"
-source = "git+https://github.com/summa-dev/halo2#8386d6e64fc33baccf626869123185890b8284dc"
-dependencies = [
- "blake2b_simd",
- "ff 0.13.0",
- "group 0.13.0",
- "halo2curves 0.1.0",
- "maybe-rayon",
- "rand_chacha",
- "rand_core 0.6.4",
- "sha3 0.9.1",
- "tracing",
-]
-
-[[package]]
 name = "halo2_solidity_verifier"
 version = "0.1.0"
-source = "git+https://github.com/summa-dev/halo2-solidity-verifier#d33972567f83f3218257b286b541ad97ba32928c"
 dependencies = [
  "askama",
  "blake2b_simd",
- "halo2_proofs 0.2.0 (git+https://github.com/summa-dev/halo2)",
+ "halo2_proofs 0.2.0 (git+https://github.com/zeroqn/halo2?branch=feat-adapt-to-analyzer)",
  "hex",
  "itertools 0.11.0",
  "revm",
