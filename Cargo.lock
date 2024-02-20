@@ -2039,27 +2039,12 @@ dependencies = [
  "bitvec",
  "ff 0.13.0",
  "group 0.13.0",
- "halo2_proofs 0.2.0 (git+https://github.com/zeroqn/halo2?branch=feat-adapt-to-analyzer)",
+ "halo2_proofs",
  "halo2curves 0.1.0",
  "lazy_static",
  "rand 0.8.5",
  "subtle",
  "uint",
-]
-
-[[package]]
-name = "halo2_proofs"
-version = "0.2.0"
-dependencies = [
- "blake2b_simd",
- "ff 0.13.0",
- "group 0.13.0",
- "halo2curves 0.1.0",
- "maybe-rayon",
- "rand_chacha",
- "rand_core 0.6.4",
- "sha3 0.9.1",
- "tracing",
 ]
 
 [[package]]
@@ -2084,7 +2069,7 @@ version = "0.1.0"
 dependencies = [
  "askama",
  "blake2b_simd",
- "halo2_proofs 0.2.0 (git+https://github.com/zeroqn/halo2?branch=feat-adapt-to-analyzer)",
+ "halo2_proofs",
  "hex",
  "itertools 0.11.0",
  "revm",
@@ -2469,7 +2454,7 @@ dependencies = [
  "env_logger 0.9.3",
  "ff 0.13.0",
  "group 0.13.0",
- "halo2_proofs 0.2.0",
+ "halo2_proofs",
  "halo2curves 0.2.1",
  "log",
  "num",
@@ -4147,7 +4132,7 @@ dependencies = [
  "ethers",
  "ff_ce",
  "halo2_gadgets",
- "halo2_proofs 0.2.0 (git+https://github.com/zeroqn/halo2?branch=feat-adapt-to-analyzer)",
+ "halo2_proofs",
  "halo2_solidity_verifier",
  "hex",
  "itertools 0.11.0",

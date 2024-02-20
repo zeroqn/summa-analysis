@@ -1,3 +1,5 @@
+#![feature(generic_const_exprs)]
+
 use std::marker::PhantomData;
 
 use anyhow::{Context, Ok, Result};
