@@ -2481,7 +2481,6 @@ dependencies = [
 [[package]]
 name = "korrekt"
 version = "0.1.0"
-source = "git+https://github.com/zeroqn/halo2-analyzer?branch=feat-summa-fork-halo2#9894430ff9928a36fb77cce4787561bfae1de9bf"
 dependencies = [
  "alloy-primitives 0.6.3",
  "anyhow",
