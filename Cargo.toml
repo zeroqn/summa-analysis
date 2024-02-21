@@ -8,7 +8,9 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.80"
 env_logger = "0.11.2"
-korrekt = { git = "https://github.com/zeroqn/halo2-analyzer", default-features = false, features = ["use_summa_halo2_proofs"], branch = "feat-summa-fork-halo2" }
+korrekt = { path = "./korrekt", default-features = false, features = [
+    "use_summa_halo2_proofs",
+] }
 log = "0.4.20"
 num = "0.4.1"
 summa-solvency = { path = "./circuit/solvency/zk_prover" }
