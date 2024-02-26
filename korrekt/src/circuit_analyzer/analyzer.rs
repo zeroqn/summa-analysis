@@ -474,7 +474,7 @@ impl<'b, F: AnalyzableField> Analyzer<F> {
                     U256::from_str_radix(format!("{:?}", a).strip_prefix("0x").unwrap(), 16)
                         .unwrap();
 
-                let term = format!("(as ff{:?} F)", constant_decimal_value);
+                let term = format!("(as ff{} F)", constant_decimal_value.to_string());
                 (term, NodeType::Constant)
             }
             Expression::Selector(a) => {
@@ -496,7 +496,7 @@ impl<'b, F: AnalyzableField> Analyzer<F> {
                     )
                     .unwrap();
                 }
-                let term = format!("(as ff{:?} F)", t);
+                let term = format!("(as ff{} F)", t.to_string());
 
                 (term, NodeType::Fixed)
             }
